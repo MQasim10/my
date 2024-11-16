@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     $('#menu').click(function () {
-        console.log('Menu clicked');
         $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
     });
@@ -9,4 +8,5 @@ $(document).ready(function () {
         $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
     });
+
 });
