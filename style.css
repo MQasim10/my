@@ -202,6 +202,7 @@ header .navbar ul li a:hover {
 
 .about .row {
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     padding: 1rem 0;
@@ -215,19 +216,19 @@ header .navbar ul li a:hover {
 
 .about .row .info h3 {
     font-size: 2rem;
-    color: rgb(235, 141, 18);
+    color: var(--yellow);
     padding: 1rem 0;
     font-weight: normal;
 }
 
 .about .row .info h3 span {
     color: #eee;
-    padding: 0, 5rem;
+    padding: 0 .5rem;
 }
 
 
 .about .row .counter {
-    flex: 1 1 45rem;
+    flex: 1 1 48rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -239,18 +240,74 @@ header .navbar ul li a:hover {
     text-align: center;
     padding: 2rem;
     margin: 2rem;
-
-
 }
 
 .about .row .counter .box span {
     font-size: 4rem;
-    color: rgb(235, 141, 18);
+    color: var(--yellow);
 }
 
 .about .row .counter .box h3 {
     font-size: 2rem;
     color: #fff;
+}
+
+
+
+.education .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;
+
+}
+
+.education .box-container .box {
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+
+}
+
+.education .box-container .box span {
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 5rem 2.5rem;
+}
+
+.education .box-container .box h3 {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p {
+    font-size: 1.4rem;
+    color: #eee;
+    padding: 1rem 0;
+
+}
+
+.education .box-container .box i {
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--yellow);
+
+
 }
 
 .potfolio .box-container {
@@ -345,6 +402,31 @@ header .navbar ul li a:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:1200px) {
     html {
         font-size: 55%;
@@ -391,5 +473,22 @@ header .navbar ul li a:hover {
 
     header {
         width: 100vw;
+    }
+
+    .heading {
+        margin: 0 3rem;
+    }
+
+    .about .row .counter .box {
+        width: 100%;
+    }
+
+    .education .box-container .box {
+        width: 100%;
+
+    }
+
+    .potfolio .box-container .box {
+        width: 100%;
     }
 }
