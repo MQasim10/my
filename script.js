@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('#menu').click(function () {
-
+        console.log("hello world")
         $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
         $('.main-container').toggleClass('blurred');
@@ -34,3 +34,4 @@ $(document).ready(function () {
     })
 
 });
+
